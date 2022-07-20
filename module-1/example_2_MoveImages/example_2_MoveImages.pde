@@ -1,14 +1,12 @@
-PImage kroger; // global variable kroger
+PImage img;
 
-// Setup is a function that runs once "sets" things up for the sketch
 void setup() {
-  kroger = loadImage("kroger.jpeg");
-  size(500, 500);
+  size(800,600);
+  img = loadImage("atlBasemap.jpg");
+  img.resize(width, 0);
 }
 
-// Draw is a function that runs over and over again
 void draw() {
-  background(0);
-  //image(kroger, 0, 0);
-  //image(kroger, mouseX, mouseY, 250, 250);
+  //background(50); // unncomment to draw a background
+  image(img, mouseX, mouseY);
 }
