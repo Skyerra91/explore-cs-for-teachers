@@ -1,11 +1,11 @@
 PImage img;
 
 void setup() {
-  size(400,400);
+  size(800,600);
   img = loadImage("atlBasemap.jpg");
+  // img.resize(width, 0); // uncomment this line of code to size the image properly
 }
 
 void draw() {
   image(img, 0, 0);
-  image(img, 0, 0, width/2, height/2);
 }
